@@ -1,5 +1,36 @@
 {
-  "dependencies": {
-    "vscode": "^1.1.37"
+  "name": "flux-theme",
+  "displayName": "Flux Theme",
+  "description": "The official theme of the Flux IDE",
+  "version": "0.0.1",
+  "publisher": "bakko7821",
+  "engines": {
+    "vscode": "^1.110.0"
+  },
+  "homepage": "https://github.com/bakko7821/flux-theme",
+  "bugs": {
+    "url": "https://github.com/bakko7821/flux-theme/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bakko7821/flux-theme.git"
+  },
+  "icon": "assets/icon.png",
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Flux Theme Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/flux-theme-dark.json"
+      },
+      {
+        "label": "Flux Theme Light",
+        "uiTheme": "vs",
+        "path": "./themes/flux-theme-light.json"
+      }
+    ]
   }
 }
